@@ -1,0 +1,23 @@
+[package]
+name = "deli"
+version = "0.1.0"
+authors = ["ocornoc <ocornoc@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+nalgebra = "^0.19"
+lazysort = "^0.2"
+approx = "^0.3"
+rand = "^0.7"
+
+[dev-dependencies]
+criterion = "^0.3"
+pretty_assertions = "^0.6"
+
+[[bench]]
+name = "benchmarks"
+harness = false
+
+[[bench]]
+name = "huge_point_collision"
+harness = false
